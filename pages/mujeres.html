@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/ico.ico">
+    
+    <title>Elizabeth's Boutique</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="../index.html"><h3>Elizabeth Boutique</h3></a>
+        
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="../index.html#catalogo">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#offers">Ofertas</a>
+          </li>        
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorías
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="hombres.html">Hombre</a>
+              <a class="dropdown-item" href="mujeres.html">Mujeres</a>
+              <a class="dropdown-item" href="niños.html">Niños/as</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../index.html#offers">Ofertas</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#contacUs">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#WorkWithUs">Trabaja con nosotros</a>
+          </li>
+          <li class="nav-item" disabled>
+            <a class="nav-link disabled" href="">EB > Inicio > Mujeres</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <button onclick="mostrarBusqueda()" class="btn btn-outline-dark my-2 my-sm-0" >Buscar</button>
+      </div>
+    </nav>
+  </header>
+<body>
+    <!--Gallery-->
+    <div class="container-cat">
+        <div class="item">
+          <img src="../img/Mujer/mujer1.png" alt="" class="item-img">
+          <div class="item-text">
+            <h4>Vestido de noche - Encaje Color Vino</h4>
+            <h6>$60.00</h6>
+          </div>
+        </div>
+        
+        <div class="item">
+          <img src="../img/Mujer/mujer2.jpg" alt="" class="item-img">
+          <div class="item-text">
+            <h4>Vestido de Fiesta - Gamusa azul noche</h4>
+            <h6>$110.00</h6>
+          </div>
+        </div>
+        
+        <div class="item">
+          <img src="../img/Mujer/mujer3.JPG" alt="" class="item-img">
+          <div class="item-text">
+            <h4>Vestido de Fiesta - Color Rojo</h4>
+            <h6>$55.00</h6>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../img/Mujer/mujer4.jpg" alt="" class="item-img">
+          <div class="item-text">
+            <h4>Vestido de Fiesta - Satín Verde </h4>
+            <h6>$120.00</h6>
+          </div>
+        </div>
+        
+        <div class="item">
+          <img src="../img/Mujer/mujer5.jpg" alt="" class="item-img">
+          <div class="item-text">
+            <h4>Vestido de Fiesta - Chifón negro</h4>
+            <h6>$99.00</h6>
+          </div>
+        </div>
+        
+        <div class="item">
+          <img src="../img/Mujer/mujer6.jpg" alt="" class="item-img">
+          <div class="item-text">
+            <h4>Conjunto de Fiesta - Bluja de lentejuelas + Falda de Satín</h4>
+            <h6>$100.00</h6>
+          </div>
+        </div>
+      </div>  
+
+    <!--pagination-->
+      <div class="pagination container">
+          <div class="row mx-auto">
+            <div class="col-lg-12">
+              <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                    </li>
+  
+                    <li class="page-item active"><a class="actual page-link">1</a></li>
+                    <li class="page-item"><a onclick="mostrarError();" class="page-link" >2</a></li>
+                    <li class="page-item"><a onclick="mostrarError();" class="page-link" >3</a></li>
+  
+                    <li class="page-item">
+                        <a class="page-link" onclick="mostrarError();">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+          </div>
+      </div>
+      <!--Footer-->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Elizabeth Boutique</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h1 class="titlesFooter">Ofrecemos</h1>
+                    <ul>
+                        <li><a href="mujeres.html">Prendas de Mujer</a></li>
+                        <li><a href="hombres.html">prendas de Cababellero</a></li>
+                        <li><a href="niños.html">Prendas para niño</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h1 class="titlesFooter">Acerca de:</h1>
+                    <ul>
+                        <li><a href="">Desarrolladores</a></li>
+                        <li><a href="">@davidmejiaa19 <i class="fab fa-twitter text-white mr-4"></i></a></li>
+                        <li><a href="">@davidmejiaa19 <i class="fab fa-instagram text-white mr-4"></i></a></li>
+                        <li><a href="">+503 79255533 <i class="fab fa-whatsapp text-white mr-4"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h1 class="titlesFooter">Una marca de la Familia</h1>
+                    <p>Elizabeth Boutique es una marca registrada, con todos los derechos reservados, funcionando desde 2020.<BR>Siguenos en redes sociales y descubre nuestro catálogo.<br>Te esperamos!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+  <footer>
+    <div class="col-md-12 text-center">
+      <a href=""><i class="fab fa-facebook-f text-white mr-4"></i></a>
+      <a href=""><i class="fab fa-twitter text-white mr-4"></i></a>
+      <a href=""><i class="fab fa-telegram text-white mr-4"></i></a>
+      <a href=""><i class="fab fa-instagram text-white mr-4"></i></a> 
+      <a href=""><i class="fab fa-linkedin text-white mr-4"></i></a>
+      <a href=""><i class="fab fa-whatsapp text-white mr-4"></i></a>
+    </div>
+  </footer>
+
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/init.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>
